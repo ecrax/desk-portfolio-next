@@ -33,7 +33,7 @@ const Header = ({ title = titleDefault }) => {
         <meta name="og:title" content={title} />
         <meta name="og:type" content="site" />
         <meta name="og:url" content={url} />
-        <meta name="og:image" content={"/icons/share.jpg"} />
+        <meta name="og:image" content={"/icons/share.png"} />
         <meta name="og:site_name" content={title} />
         <meta name="og:description" content={description} />
 
@@ -73,8 +73,13 @@ const Header = ({ title = titleDefault }) => {
       Twitter Summary card
         documentation: https://dev.twitter.com/cards/getting-started
         Be sure validate your Twitter card markup on the documentation site. */}
-        <meta name="twitter:card" content="summary" />
-        <meta name="twitter:site" content="@onirenaud" />
+        <meta name="twitter:site" content="@LeoKling_" />
+        <meta name="twitter:card" content="summary_large_image" />
+
+        <meta name="twitter:creator" content="@LeoKling_" />
+        <meta name="twitter:title" content={title} />
+        <meta name="twitter:description" content={description} />
+        <meta name="twitter:image" content="/images/share.jpg" />
       </Head>
     </>
   );

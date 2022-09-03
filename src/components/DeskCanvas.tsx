@@ -10,6 +10,8 @@ import { Screen } from "./Screen";
 
 const DeskCanvas: React.FC = () => {
   const { size } = useThree();
+  const aspect = size.width / size.height;
+
   return (
     <>
       <PerspectiveCamera
@@ -19,12 +21,12 @@ const DeskCanvas: React.FC = () => {
         near={0.1}
         far={1000}
         fov={40}
-        aspect={size.width / size.height}
+        aspect={aspect}
       />
       <OrbitControls
         enablePan={false}
         minDistance={2}
-        maxDistance={4}
+        maxDistance={Math.E ** (0.4 * -aspect) * 10}
         target={[0, 0.5, 0]}
       />
 
@@ -48,7 +50,7 @@ const DeskCanvas: React.FC = () => {
 
         {/* <Environment files={"reinforced_concrete.hdr"} /> */}
         {/* <Environment files={"brown_photostudio.hdr"} /> */}
-        <Environment files={"small_cathedral.hdr"} />
+        <Environment files={"small_cathedral.hdr"} resolution={512} />
       </Suspense>
     </>
   );

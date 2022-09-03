@@ -1,7 +1,7 @@
 import Head from "next/head";
 
 const titleDefault = "React Three Next Starter";
-const url = "https://react-three-next.vercel.app/";
+const url = "https://desk-portfolio-next.vercel.app/";
 const description =
   "The easiest and fastest way to create a 3D website using React Three Fiber and NextJS";
 const author = "ecrax";
@@ -33,7 +33,7 @@ const Header = ({ title = titleDefault }) => {
         <meta name="og:title" content={title} />
         <meta name="og:type" content="site" />
         <meta name="og:url" content={url} />
-        <meta name="og:image" content={"/icons/share.png"} />
+        <meta name="og:image" content={"/icons/share.jpg"} />
         <meta name="og:site_name" content={title} />
         <meta name="og:description" content={description} />
 
@@ -53,13 +53,11 @@ const Header = ({ title = titleDefault }) => {
           sizes="180x180"
           href="/icons/apple-touch-icon.png"
         />
-        <link rel="manifest" href="/manifest.json" />
         <link
           rel="mask-icon"
           color="#000000"
           href="/icons/safari-pinned-tab.svg"
         />
-        <link rel="apple-touch-startup-image" href="/startup.png" />
 
         {/* Meta Tags for HTML pages on Mobile */}
         {/* <meta name="format-detection" content="telephone=yes"/>

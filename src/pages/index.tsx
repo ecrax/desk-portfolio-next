@@ -21,7 +21,7 @@ const Home: NextPage = () => {
 export async function getStaticProps() {
   return {
     props: {
-      title: "Index",
+      title: "_",
     },
   };
 }

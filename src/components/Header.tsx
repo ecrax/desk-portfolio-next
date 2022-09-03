@@ -32,7 +32,7 @@ const Header = ({ title = titleDefault }) => {
         <meta name="og:title" content={title} />
         <meta name="og:type" content="site" />
         <meta name="og:url" content={url} />
-        <meta name="og:image" content={url + "/images/share.jpg"} />
+        <meta name="og:image" content={url + "images/share.jpg"} />
         <meta name="og:site_name" content={title} />
         <meta name="og:description" content={description} />
 
@@ -78,7 +78,7 @@ const Header = ({ title = titleDefault }) => {
         <meta name="twitter:creator" content="@LeoKling_" />
         <meta name="twitter:title" content={title} />
         <meta name="twitter:description" content={description} />
-        <meta name="twitter:image" content={url + "/images/share.jpg"} />
+        <meta name="twitter:image" content={url + "images/share.jpg"} />
       </Head>
     </>
   );

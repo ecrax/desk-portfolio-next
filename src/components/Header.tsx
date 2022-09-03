@@ -2,8 +2,7 @@ import Head from "next/head";
 
 const titleDefault = "React Three Next Starter";
 const url = "https://desk-portfolio-next.vercel.app/";
-const description =
-  "The easiest and fastest way to create a 3D website using React Three Fiber and NextJS";
+const description = "an interactive personal website";
 const author = "ecrax";
 
 const Header = ({ title = titleDefault }) => {
@@ -33,7 +32,7 @@ const Header = ({ title = titleDefault }) => {
         <meta name="og:title" content={title} />
         <meta name="og:type" content="site" />
         <meta name="og:url" content={url} />
-        <meta name="og:image" content={"/icons/share.png"} />
+        <meta name="og:image" content={url + "/images/share.jpg"} />
         <meta name="og:site_name" content={title} />
         <meta name="og:description" content={description} />
 
@@ -75,11 +74,11 @@ const Header = ({ title = titleDefault }) => {
         Be sure validate your Twitter card markup on the documentation site. */}
         <meta name="twitter:site" content="@LeoKling_" />
         <meta name="twitter:card" content="summary_large_image" />
-
+        <meta property="twitter:url" content={url} />
         <meta name="twitter:creator" content="@LeoKling_" />
         <meta name="twitter:title" content={title} />
         <meta name="twitter:description" content={description} />
-        <meta name="twitter:image" content="/images/share.jpg" />
+        <meta name="twitter:image" content={url + "/images/share.jpg"} />
       </Head>
     </>
   );
